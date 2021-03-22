@@ -1,0 +1,381 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    height: 738px;
+    position: fixed;
+}
+
+
+.navbar_gray {
+    width: 360px;
+    height: 13px;
+    line-height: 45px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 16px;
+}
+
+.navbar_gray .back {
+    margin-top: 16px;
+    position: relative;
+    bottom: 2px;
+}
+
+.navbar_gray .title {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+/* .navbar_gray .tk-point {
+    width: 24px;
+    height: 24px;
+    margin: auto 16px;
+    visibility: hidden;
+} */
+
+.navbar_gray .save {
+    width: 24px;
+    height: 24px;
+    margin: auto 16px;
+    /* visibility: hidden; */
+}
+
+.back a {
+    display: block;
+    text-decoration: none;
+}
+
+h2{
+    padding: 60px 0px 0px 0px;
+    margin: 0px 10px 10px 10px;
+    color: #5686c8;
+    font-family: sans-serif;
+}
+
+.div { 
+    overflow : hidden ; 
+    height : 160px ;
+} 
+.box { 
+    height: 160px;
+    background : rgb(255, 255, 255) ; 
+    padding : 0px 0 ; 
+    white-space : nowrap ; /*文本不會換行，文本會在在同一行上繼續*/ 
+    overflow-y : auto ; /*可滑動*/
+    display: flex;
+}
+/*自定義滾動條的偽對象選擇器, CSS可以隱藏滾動條*/ 
+.box::-webkit-scrollbar{
+    display: none;
+} 
+
+
+.box1 { 
+    position: relative;
+    /* text-align: center; */
+    /* border:2px solid black; */
+    display: inline-block;/*行內塊元素*/ 
+    margin-left : 3% ;  
+}
+
+.box1 img{
+    width: 270px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+
+.word1{
+    /* border: 1px solid rebeccapurple; */
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    top: 95px;
+    right : 0px; 
+    left: 10px;
+    display: block;
+    font-family: sans-serif;
+    line-height: 3px;
+    z-index: 2;
+}
+
+
+
+
+.box2 { 
+    position: relative;
+    /* text-align: center; */
+    /* border:2px solid black; */
+    display: inline-block;/*行內塊元素*/ 
+    margin-left : 3% ;  
+    /* background : rgb(255, 255, 255) ;  */
+}
+
+.box2 img{
+    width: 270px;
+    height: 160px;
+    border-radius: 15px;
+
+}
+
+.word2{
+    /* border: 1px solid rebeccapurple; */
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    top: 95px;
+    right : 0px; 
+    left: 12px;
+    display: block;
+    font-family: sans-serif;
+    line-height: 3px;
+    z-index: 2;
+}
+
+.box3 { 
+    position: relative;
+    /* width : 60% ;  */
+    margin-left : 3% ; 
+    /* height : 140px ;  */
+    /* background : rgb(255, 255, 255) ;  */
+    display : inline-block ; /*行內塊元素*/  
+    /* background-image: url(../img/img03.png);
+    border-radius: 15px; */ 
+}
+
+.linear-gradientA, .linear-gradientB, .linear-gradientC, .linear-gradientD, .linear-gradientE{
+    width: 270px;
+    height: 101px;
+     border-radius: 15px;
+    background: linear-gradient(#ffffff00, #272727);
+    position: relative;
+    top: -105px;
+    z-index: 0;
+}
+
+
+
+.box3 img{
+    width: 270px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.word3{
+    /* border: 1px solid rebeccapurple; */
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 12px;
+    color: rgb(255, 255, 255);
+    top: 95px;
+    right : 0px; 
+    display: block;
+    font-family: sans-serif;
+    line-height: 3px;
+    z-index: 2;
+}
+
+
+
+.box4 { 
+    position: relative;
+    /* width : 60% ;  */
+    margin-left : 3% ; 
+    /* height : 140px ; 
+    background : rgb(255, 255, 255) ;  */
+    display : inline-block ; /*行內塊元素*/  
+    /* background-image: url(../img/img04.png);
+    border-radius: 15px; */
+}
+
+.box4 img{
+    width: 270px;
+    height: 160px;
+    border-radius: 15px;
+
+}
+
+.word4{
+    /* border: 1px solid rebeccapurple; */
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 12px;
+    color: rgb(255, 255, 255);
+    top: 95px;
+    right : 0px; 
+    display: block;
+    font-family: sans-serif;
+    line-height: 3px;
+    z-index: 2;
+}
+
+.box5{ 
+    position: relative;
+    /* width : 60% ;  */
+    margin-left : 3% ; 
+    /* height : 140px ; 
+    background : rgb(255, 255, 255) ;  */
+    display : inline-block ; /*行內塊元素*/  
+    /* background-image: url(../img/img05.png);
+    border-radius: 15px; */
+}
+
+.box5 img{
+    width: 270px;
+    height: 160px;
+    border-radius: 15px;
+
+}
+
+.word5{
+    /* border: 1px solid rebeccapurple; */
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 12px;
+    color: rgb(255, 255, 255);
+    top: 95px;
+    right : 0px; 
+    display: block;
+    font-family: sans-serif;
+    line-height: 3px;
+    z-index: 2;
+}
+
+.Latest{
+    padding: 0px 0px 0px 0px;
+    margin: 18px 18px 18px 10px;
+    color: #5686c8;
+    font-family: sans-serif;
+}
+
+.latestbox{
+    width: 360px;
+    height: 415px;
+    overflow: scroll;
+}
+
+
+.b3{
+    margin: 10px 10px 20px 15px;
+    width: 340px;
+    height: 150px;
+    background-image: url(../img/img03.png);
+    border-radius: 15px;
+    color: white;
+    word-wrap: break-word;
+    background-repeat: no-repeat;
+    
+}
+
+.b3 .word{
+    height: 80px;
+    line-height: 5px;
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    z-index: 10;
+    padding-left: 10px;
+}
+
+.linear-gradienta {
+    width: 327px;
+    height: 100px;
+    border-radius: 15px;
+    background: linear-gradient(#ffffff00, #272727);
+    position: relative;
+    top: -25px;
+    z-index: 0;
+}
+
+
+
+.b4{
+    
+    margin: 10px 10px 20px 15px;
+    width: 340px;
+    height: 150px;
+    background-image: url(../img/img04.png);
+    border-radius: 15px;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.b4 .word{
+    height: 80px;
+    line-height: 5px;
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    z-index: 10;
+    color: white;
+    padding-left: 10px;
+}
+
+.linear-gradientb {
+    width: 326px;
+    height: 101px;
+     border-radius: 15px;
+    background: linear-gradient(#ffffff00, #272727);
+    position: relative;
+    top: -180px;
+    z-index: 0;
+}
+
+
+
+.b5{
+    margin: 10px 10px 10px 15px;
+    width: 340px;
+    height: 150px;
+    background-image: url(../img/img05.png);
+    border-radius: 15px;
+    color: white;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    bottom: 0px;
+}
+
+.b5 .word{
+    height: 80px;
+    line-height: 5px;
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    z-index: 10;
+    color: white;
+    padding-left: 10px;
+}
+
+.linear-gradientc {
+    width: 328px;
+    height: 101px;
+    border-radius: 15px;
+    background: linear-gradient(#ffffff00, #272727);
+    position: relative;
+    top: -180px;
+    z-index: 0;
+}
+
+.latestbox::-webkit-scrollbar{
+    display: none;
+} 

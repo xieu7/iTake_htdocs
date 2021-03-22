@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others Tones</title>
+    <link rel="stylesheet" href="./css/style03.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar_gray">
+        <div class="back">
+            <a href="./cards.html"><img src="./img/ic_back_gray.png" alt=""></a>
+        </div>
+        <div class="title">Others Tones</div>
+        <div class="tk-point"></div>
+    </nav>
+
+    <div class="container" id="tones">
+        <div class="taiwan">
+            <div class="north" id="north"></div>
+            <div class="middle" id="middle"></div>
+            <div class="south" id="south"></div>
+            <div class="east" id="east"></div>
+            <div class="yilan" id="yilan"></div>
+        </div>
+        <div class="tonebg">
+            <div class="taigi" id="taigi" value="變更文字" onclick="ChangeString()">ian-tshiang</div>
+            <div class="english">Sausage</div>
+        </div>
+    </div>
+
+    <audio id="mySong1">
+        <source src="media/kuàn-tshiâng.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="mySong2">
+        <source src="media/ian-tshiang.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="mySong3">
+        <source src="media/ian-tshiân.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="mySong4">
+        <source src="media/ian-tshiang.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="mySong5">
+        <source src="media/sio-tshiân.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong1 = document. getElementById("mySong1") ;
+        var north = document. getElementById("north") ;
+        north.onclick = function(){
+            mySong1.play();
+            document.getElementById("taigi").innerHTML='kuàn-tshiâng';
+        }
+
+
+        var mySong2 = document. getElementById("mySong2") ;
+        var middle = document. getElementById("middle") ;
+        middle.onclick = function(){
+            mySong2.play();        
+            document.getElementById("taigi").innerHTML='ian-tshiang';
+        }
+
+        var mySong3 = document. getElementById("mySong3") ;
+        var south = document. getElementById("south") ;
+        south.onclick = function(){
+            mySong3.play();        
+            document.getElementById("taigi").innerHTML='ian-tshiân';
+        }
+
+        var mySong4 = document. getElementById("mySong4") ;
+        var east = document. getElementById("east") ;
+        east.onclick = function(){
+            mySong4.play();        
+            document.getElementById("taigi").innerHTML='ian-tshiang';
+        }
+
+        var mySong5 = document. getElementById("mySong5") ;
+        var yilan = document. getElementById("yilan") ;
+        yilan.onclick = function(){
+            mySong5.play();  
+            document.getElementById("taigi").innerHTML='sio-tshiân';      
+        }
+    
+    
+    
+
+    </script>
+
+
+</body>
+</html>
