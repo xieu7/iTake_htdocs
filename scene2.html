@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style02.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar -->
+     <div class="bg06">
+         <div class="linear_gradient01">
+            <nav class="navbar_white">
+                <div class="back"><a href="./index.html"><img src="./img/ic_back.png"alt="back"></a>
+                </div>
+                       <div class="title">Scene Recognition</div>
+                       <div class="tk-point"></div>
+             </nav>
+          </div>
+   
+     <!-- result -->
+   <div class="result07">
+       <h5>ka-pi-thiann</h5>
+       <h6>Coffee shop</h6>
+   </div>
+     <!-- example -->
+     <div class ="linear_gradient03" > 
+           <div class ="scroll" > 
+                 <div class ="box1" id="tsi̍t_pue" >
+                    <p>tsi̍t pue ka-pi</p>
+                    <p>A cup of coffee</p>
+                 </div > 
+           <div class ="box1" id="tuā_pue">
+                    <p>guá beh tuā pue ê</p>
+                    <p>A large one, please</p>
+                 </div > 
+           <div class ="box1" >
+                    <p>m̄-bián ka thn̂g</p>
+                    <p>No sugar</p>
+           </div > 
+    </div > 
+</div >
+   </div>
+
+   <audio id="mySong1">
+        <source src="media/tsi̍t_pue_ka-pi.mp3" type="audio/mp3">
+    </audio>
+    <audio id="mySong2">
+        <source src="media/guá_beh_tuā_pue_ê.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script>
+        var mySong1 = document.getElementById("mySong1");
+        var tsi̍t_pue = document.getElementById("tsi̍t_pue");
+        tsi̍t_pue.onclick = function () {
+            mySong1.play();
+        }
+        var mySong2 = document.getElementById("mySong2");
+        var tuā_pue = document.getElementById("tuā_pue");
+        tuā_pue.onclick = function () {
+            mySong2.play();
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>

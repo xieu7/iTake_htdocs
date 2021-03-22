@@ -1,0 +1,418 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+@media screen and (max-width: 360px) {
+    ul {
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    height: 738px;
+    position: fixed;
+}
+
+.navbar_gray {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar_gray .back {
+    margin: 16px;
+    position: relative;
+    bottom: 2px;
+}
+
+.navbar_gray .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.navbar_gray .tk-point {
+    width: 24px;
+    height: 24px;
+    margin: auto 16px;
+    visibility: hidden;
+}
+
+.navbar_gray .save {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ic_save_small.png);
+    margin: auto 16px;
+    /* visibility: hidden; */
+}
+
+.back a {
+    display: block;
+    text-decoration: none;
+}
+
+/*==================== Cards ====================*/
+.card {
+    width: 290px;
+    height: 600px;
+    margin: 90px auto;
+    overflow: hidden;
+    border-radius: 30px 0 30px 0 !important;
+    border: none !important;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .info {
+    margin: 45px auto;
+    z-index: 2;
+}
+
+.card .taigi,
+.card .english {
+    color: #fff;
+    text-align: center;
+}
+
+.card .taigi {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card .english {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .cardimg1 {
+    width: 46px;
+    height: 197px;
+    background-image: url('../img/card_sausage.png');
+    position: relative;
+    top: 35px;
+    left: 122px;
+}
+
+.card .cardimg2 {
+    width: 67px;
+    height: 197px;
+    background-image: url('../img/card_tofu.png');
+    position: relative;
+    top: 35px;
+    left: 111px;
+}
+
+.card .cardimg3 {
+    width: 171px;
+    height: 197px;
+    background-image: url('../img/card_porkrice.png');
+    position: relative;
+    top: 35px;
+    left: 63px;
+}
+
+.card .cardimg4 {
+    width: 77px;
+    height: 197px;
+    background-image: url('../img/card_bloodpudding.png');
+    position: relative;
+    top: 35px;
+    left: 107px;
+}
+
+.card .taiwantone {
+    width: 47px;
+    height: 47px;
+    background-image: url('../img/ic_tw_blue.png');
+    position: relative;
+    top: 8px;
+    left: 227px;
+}
+
+.card .taiwantone_d {
+    width: 47px;
+    height: 47px;
+    background-image: url('../img/ic_tw_gray.png');
+    position: relative;
+    top: 8px;
+    left: 227px;
+}
+
+.tone {
+    width: 260px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 35px auto;
+}
+
+.tone .path1 {
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/path01.png');
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+.tone .path2 {
+    width: 55px;
+    height: 50px;
+    background-image: url('../img/path02.png');
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+
+.tone .toneline {
+    width: 260px;
+    height: 60px;
+    position: absolute;
+    bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tone .toneline .path3,
+.tone .toneline .path4,
+.tone .toneline .path5,
+.tone .toneline .path6,
+.tone .toneline .path7,
+.tone .toneline .path8 {
+    width: 100%;
+    height: 2px;
+    background-color: #c2c2c2;
+}
+
+.card .cardbg {
+    width: 290px;
+    height: 358px;
+    background-image: url('../img/cardbg_blue.png');
+    position: relative;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.card .cardbtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .cardbtn .sound {
+    width: 44px;
+    height: 44px;
+    background-image: url('../img/ic_sound.png');
+}
+
+.card .cardbtn .record {
+    width: 58px;
+    height: 58px;
+    background-image: url('../img/ic_record.png');
+}
+
+.card .cardbtn .play {
+    width: 44px;
+    height: 44px;
+    background-image: url('../img/ic_play.png');
+}
+
+/*==================== Others Tones ====================*/
+
+#tones {
+    padding: 0;
+    background-color: #fff;
+}
+
+.tonebg {
+    width: 360px;
+    height: 160px;
+    margin: 0;
+    background-image: url('../img/bg03_blue.png');
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+
+}
+
+.tonebg .taigi,
+.tonebg .english {
+    text-align: center;
+}
+
+.tonebg .taigi {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 65px;
+}
+
+.tonebg .english {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.taiwan .north {
+    width: 122px;
+    height: 98px;
+    background-image: url('../img/tw01_n.png');
+    position: absolute;
+    top: 136px;
+    left: 166px;
+}
+
+
+.taiwan .middle {
+    width: 151px;
+    height: 157px;
+    background-image: url('../img/tw02_n.png');
+    position: absolute;
+    top: 195.9px;
+    left: 82.3px;
+}
+
+.taiwan .south {
+    width: 118px;
+    height: 212px;
+    background-image: url('../img/tw03_n.png');
+    position: absolute;
+    top: 323px;
+    left: 67.4px;
+}
+
+.taiwan .east {
+    width: 113px;
+    height: 259px;
+    background-image: url('../img/tw04_n.png');
+    position: absolute;
+    top: 232px;
+    left: 155px;
+}
+
+.taiwan .yilan {
+    width: 50px;
+    height: 56px;
+    background-image: url('../img/tw05_n.png');
+    position: absolute;
+    top: 185px;
+    left: 226px;
+}
+
+.taiwan .north:hover {
+    width: 126px;
+    height: 104px;
+    background-image: url('../img/tw01_f.png');
+    position: absolute;
+    top: 134px;
+    left: 164px;
+    z-index: 10;
+}
+
+
+.taiwan .middle:hover {
+    width: 156px;
+    height: 160px;
+    background-image: url('../img/tw02_f.png');
+    position: absolute;
+    top: 195px;
+    left: 80px;
+    z-index: 10;
+}
+
+.taiwan .south:hover {
+    width: 126px;
+    height: 218px;
+    background-image: url('../img/tw03_f.png');
+    position: absolute;
+    top: 320px;
+    left: 64.4px;
+    z-index: 10;
+}
+
+.taiwan .east:hover {
+    width: 117px;
+    height: 266px;
+    background-image: url('../img/tw04_f.png');
+    position: absolute;
+    top: 232px;
+    left: 155px;
+    z-index: 10;
+}
+
+.taiwan .yilan:hover {
+    width: 54px;
+    height: 60px;
+    background-image: url('../img/tw05_f.png');
+    position: absolute;
+    top: 185px;
+    left: 226px;
+    z-index: 10;
+}
+
+/*==================== Buzzwords ====================*/
+
+iframe {
+    position: relative;
+    top: 45px;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#speak {
+    width: 100%;
+    height: 485px;
+    overflow: scroll;
+    padding: 16px;
+    flex-direction: column;
+    position: relative;
+    top: 45px;
+}
+
+#speak::-webkit-scrollbar{
+    display: none;
+} 
+
+
+#speak1 {
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    border-radius: 20px 20px 0 20px;
+    color: #3c64a0;
+    text-align: left;
+    float: right;
+}
+
+.speakright {
+    flex-direction: column;
+    justify-content: right;
+    float: right;
+}
+
+.speakleft .speak2 {
+    margin: 16px 0 8px 0;
+    padding: 16px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 20px 20px 20px 0;
+    color: #ff6458;
+}
+
+
+/*==================== Save ====================*/
